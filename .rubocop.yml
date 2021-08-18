@@ -1,0 +1,9 @@
+inherit_from: .rubocop_todo.yml
+
+Layout/LineLength:
+  Max: 100
+  Exclude:
+    - 'bin/*'
+    - 'config/initializers/*'
+    - 'config/environments/*'
+    - 'db/seeds.rb'
