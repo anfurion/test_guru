@@ -1,1 +1,5 @@
-ENV['RAILS_APP_VERSION'] = '0.1'
+module TestGuru
+  def self.version
+    '0.1.0'
+  end
+end
