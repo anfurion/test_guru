@@ -40,3 +40,10 @@ flash = Question.create(body: 'you have collected 5 cards of which suit?', test:
 turn = Question.create(body: 'what matches did you have on the turn?', test: rpg)
 Answer.create(body: 'hearts', correct: true, question: flash)
 Answer.create(body: '2 king', correct: true, question: turn)
+
+user = User.create(email: "das@mail.ru", name: "Sanya")
+UserTest.create(user: user, test: meat)
+UserTest.create(user: user, test: fish)
+UserTest.create(user: user, test: drive_a_bike)
+UserTest.create(user: user, test: rpg)
+UserTest.create(user: user, test: poker)

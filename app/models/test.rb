@@ -1,6 +1,8 @@
 class Test < ApplicationRecord
   belongs_to :category
   has_many :questions
+  has_many :user_tests
+  has_many :users, through: :user_tests
 
   def self.by_category(category_title)
     category = Category.by_title(category_title)
